@@ -12,6 +12,13 @@ app handles your information, see the [Privacy Policy](privacy.md).
 - [Quick start](quick-start.md) — set up the app, try a sample trip, and get your first recommendation.
 - [User guide](user-guide.md) — the complete product walkthrough, with screenshots.
 
+Download the designed [quick start PDF](exports/pdf/travel-monkey-quick-start.pdf)
+or [user guide PDF](exports/pdf/travel-monkey-user-guide.pdf). Editable editions for
+Word and Google Docs are available as the
+[quick start DOCX](exports/docs/travel-monkey-quick-start.docx) and
+[user guide DOCX](exports/docs/travel-monkey-user-guide.docx).
+See [Rebuild the guides](tools/README.md) for the one-command build and import steps.
+
 If you just need a quick answer, check the [FAQ](#faq) first.
 
 ---
