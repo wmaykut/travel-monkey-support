@@ -7,6 +7,11 @@ and did, and uses Claude to recommend where to eat, what to do, and when to leav
 This page explains how to get help, report a problem, or request a feature. For how the
 app handles your information, see the [Privacy Policy](privacy.md).
 
+## Guides
+
+- [Quick start](quick-start.md) — set up the app, try a sample trip, and get your first recommendation.
+- [User guide](user-guide.md) — the complete product walkthrough, with screenshots.
+
 If you just need a quick answer, check the [FAQ](#faq) first.
 
 ---
