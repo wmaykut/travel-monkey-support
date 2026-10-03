@@ -71,10 +71,18 @@ To check opening hours, events, and other current details, the concierge may use
 Anthropic's web search and web fetch tools. Those searches are run by Anthropic, not by
 the app.
 
-Nothing is sent to Anthropic until you add your own API key. You can stop all sharing
-with Anthropic at any time by revoking that key in the
-[Anthropic Console](https://console.anthropic.com) or by deleting the app. Without a
-working key, you can still read your trip and logs, but the concierge does not work.
+Before sending personal information to Anthropic, Travel Monkey discloses what it sends
+and asks you to explicitly allow sharing. Permission is recorded separately on each
+phone. Skipping onboarding or adding an API key does not grant permission. Checking a
+pasted key sends only a fixed “ping” to Anthropic, without your household information.
+
+You can stop future personal-information requests in **Profile → Settings → Privacy →
+Withdraw permission**, or remove your saved API key in **Profile → Settings → Anthropic
+API key → Remove key**. Removing the key also withdraws permission on that phone. You
+can also revoke the key in the [Anthropic Console](https://console.anthropic.com). These
+choices do not recall requests already sent. Without permission or a working key, you
+can still read and edit your trip and logs, but features that call the concierge do not
+work.
 
 Anthropic processes these requests under its own terms and privacy policy, which apply to
 your Anthropic account: [Anthropic Privacy Policy](https://www.anthropic.com/legal/privacy).
@@ -123,7 +131,8 @@ You can:
 - Edit your household profile and trips in the app, and remove travelers and remembered
   corrections.
 - Delete a trip's conversations with **Profile → Reset memory**.
-- Revoke your API key in the Anthropic Console to stop all requests to Anthropic.
+- Withdraw sharing permission or remove your saved API key in **Profile → Settings**.
+- Revoke your API key in the Anthropic Console to stop all requests using that key.
 - Turn off location access or notifications in iOS Settings.
 - Delete the app's iCloud data in iOS **Settings → [your name] → iCloud → Manage
   Storage**.
