@@ -1,6 +1,6 @@
 # Privacy Policy — Travel Monkey
 
-Last updated: October 2, 2026
+Last updated: October 3, 2026
 
 Travel Monkey is an iPhone travel concierge for a household. It keeps your travelers'
 preferences, your trip's itinerary and reservations, and a log of meals and activities,
@@ -35,6 +35,8 @@ You enter, or the app records, the following:
 - **Conversations:** your messages to the concierge, its replies, and the context that
   was sent with each request.
 - **Location:** your device's location, when you allow it.
+- **Shared bookings:** pasted or shared text, screenshots or photos, PDFs, and Safari
+  page titles, addresses, and visible text, held in a device-local inbox for review.
 - **Your Anthropic API key**, which is stored in the iOS Keychain.
 
 ## Where it is stored
@@ -45,6 +47,11 @@ it appears on your other devices signed in to the same Apple Account. The develo
 cannot access your private iCloud database. Apple's handling of iCloud data is governed
 by [Apple's Privacy Policy](https://www.apple.com/legal/privacy/).
 
+Shared-booking files and their parsed proposals stay in an inbox on the receiving
+phone until you save or discard them; they do not sync through iCloud. Saving adds the
+extracted trip records, not the original image or PDF, to your trip. Shared images and
+PDFs are not stored as conversation attachments.
+
 Your API key is kept only in the iOS Keychain on your device. It is never shown in full
 in the app, never logged, and sent only to Anthropic, with your requests.
 
@@ -53,7 +60,7 @@ in the app, never logged, and sent only to Anthropic, with your requests.
 The concierge is Claude, called directly from your phone over an encrypted connection to
 Anthropic's API, and billed to your own Anthropic account. Each time you ask the
 concierge something, or use a feature that relies on it (such as adding reservations
-from pasted text or summarizing your logs), the app sends Anthropic:
+from pasted or shared material or summarizing your logs), the app sends Anthropic:
 
 - the concierge's instructions, which are fixed text bundled with the app;
 - your household profile, including travelers' names, preferences, dietary needs, and
@@ -64,8 +71,13 @@ from pasted text or summarizing your logs), the app sends Anthropic:
 - the results of lookups the concierge asks the app to make, such as nearby places,
   travel times, or a specific reservation.
 
-Reservation confirmation codes are sent only when the concierge asks the app for that
-specific reservation.
+For booking reading, the request includes the text, screenshot, photo, PDF, or Safari
+page information you supplied, including any confirmation codes in it. The share sheet
+stores it locally without a network request. When you open Travel Monkey with sharing
+permission, a working key, and a connection, the app sends waiting bookings to Anthropic
+for reading before you decide whether to save them. Discarding a booking afterward
+does not recall that request. In ordinary chat, stored reservation confirmation codes
+are sent when the concierge asks for that specific reservation.
 
 To check opening hours, events, and other current details, the concierge may use
 Anthropic's web search and web fetch tools. Those searches are run by Anthropic, not by
@@ -73,7 +85,9 @@ the app.
 
 Before sending personal information to Anthropic, Travel Monkey discloses what it sends
 and asks you to explicitly allow sharing. Permission is recorded separately on each
-phone. Skipping onboarding or adding an API key does not grant permission. Checking a
+phone. The disclosure now includes pasted or shared text, screenshots, and documents,
+so permission given before this update is requested again. Skipping onboarding or
+adding an API key does not grant permission. Checking a
 pasted key sends only a fixed “ping” to Anthropic, without your household information.
 
 You can stop future personal-information requests in **Profile → Settings → Privacy →

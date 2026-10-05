@@ -9,7 +9,7 @@ app handles your information, see the [Privacy Policy](privacy.md).
 
 ## Guides
 
-- [Quick start](quick-start.md) — set up the app, try a sample trip, and get your first recommendation.
+- [Quick start](quick-start.md) — set up the app, add a booking or try a sample trip, and get your first recommendation.
 - [User guide](user-guide.md) — the complete product walkthrough, with screenshots.
 
 Download the designed [quick start PDF](exports/pdf/travel-monkey-quick-start.pdf)
@@ -64,14 +64,30 @@ account. A trip's worth of questions typically costs a few dollars.
 
 **Is my API key safe?**
 It is stored in the iOS Keychain, only its last four characters are ever shown, and it is
-sent only to Anthropic. If you think it has been exposed, revoke it in the Anthropic
-Console and paste a new one.
+sent only to Anthropic. **Profile → Settings → Remove key** removes it and withdraws
+sharing permission on this phone. This does not revoke it in your Anthropic account.
+If you think it has been exposed, revoke it in the Anthropic Console and paste a new one.
 
 **What does the app send to Anthropic?**
-Each concierge request includes the household profile, today's plans and upcoming
-reservations, your current location, and the conversation. Full details are in the
+With your explicit sharing permission, concierge requests include the household
+profile, plans and reservations, location, logs, and conversation. Booking reading also
+sends the text, screenshot, PDF, or page you shared or pasted. The app reads waiting
+bookings when opened with permission, a key, and a connection, before you save them. Full details are in the
 [Privacy Policy](privacy.md#what-is-sent-to-anthropic) and in **Profile → Settings →
 Privacy**.
+
+**How do I add my first trip?**
+Share a confirmation's text, screenshot, PDF, or Safari page to Travel Monkey, then
+open the app and tap **Review**. Or tap **Add a booking** on the no-trip screen, paste
+details, and tap **Read it**. Check the proposal and trip question: **Yes** saves it;
+**No** lets you choose another trip or name a new one. **Add manually** works offline.
+See [booking instructions](user-guide.md#start-a-trip-or-add-a-booking).
+
+**Why is sharing permission requested again after the update?**
+The disclosure now includes pasted or shared text, screenshots, and documents.
+Review it in **Profile → Settings → Privacy** and tap **Allow sharing with Anthropic** if you want to resume
+AI features. Permission is separate on each phone; a saved key is not permission.
+Use **Withdraw permission** to stop future personal-information requests.
 
 **Why does it want "Always" location access?**
 So it can notice when you set off, and warn you if you're still where you were when
